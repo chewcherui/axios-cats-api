@@ -50,7 +50,7 @@ watch(familyFriendliness, () => {
     <div class="mt-10">
         <h1>Find out more about the cat breeds</h1>
         <div class="flex flex-col w-48 mx-auto">
-            <input v-model="catNameInput" class="border-2 mt-4 border-black" placeholder="Enter a breed">
+            <input v-model="catNameInput" class="border-2 mt-4 border-black text-black" placeholder="Enter a breed">
             <label class="mt-4">Level of family friendliness:</label>
             <select v-model="familyFriendliness" name="family-friendliness" class="border-2 mt-4 border-black">
                 <option value="1">1</option>
@@ -60,12 +60,6 @@ watch(familyFriendliness, () => {
                 <option value="5">5</option>
             </select>
         </div>
-
-        <!-- <div class="mt-4">
-            <h1>{{ catName }}</h1>
-            <img :src="catImg" alt="cat photo" class="mx-auto w-30"/>
-            <p>{{ catOrigin }}</p>
-        </div> -->
 
         <!-- Pass cat array API data to profile card component -->
         <cat-profile-card :cat-array="catArray"></cat-profile-card>

@@ -3,6 +3,10 @@
 import axios from "axios";
 import { ref } from "vue";
 import { intCat } from "../interface";
+import { useAppearanceStore } from "../store";
+
+const store = useAppearanceStore()
+const { toggleAppearance } = store
 
 const props = defineProps<{
     catname: string | null
@@ -37,7 +41,7 @@ getCatData();
     <div v-if="catArray">
         <div v-for="catItem in catArray" :key="catItem.name">
             <img :src="catItem.image_link" class="w-48 mx-auto my-8" alt="Image of the cat breed"/>
-            <ul class="mt-4 text-xl bg-emerald-800 p-6 w-1/2 text-center mx-auto rounded-md text-zinc-50">
+            <ul class="mt-4 text-xl bg-gray-800 p-6 w-1/2 text-center mx-auto rounded-md text-zinc-50">
                 <li>Shedding: {{ catItem.shedding }}</li>
                 <li>General Health: {{ catItem.general_health }}</li>
                 <li>Playfulness: {{ catItem.playfulness }}</li>

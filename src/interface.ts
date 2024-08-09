@@ -18,3 +18,7 @@ export interface intCat {
     max_life_expectancy: number,
     name: string
 }
+
+export interface intAppearance {
+    lightMode: boolean;
+}

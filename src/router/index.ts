@@ -1,4 +1,4 @@
-import CatProfile from "../views/CatProfile.vue";
+import CatProfile from "../views/CatDetailedProfile.vue";
 import HomePage from "../views/HomePage.vue";
 import { createRouter, createWebHistory } from "vue-router";
 

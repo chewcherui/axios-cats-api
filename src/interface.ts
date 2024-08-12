@@ -19,6 +19,17 @@ export interface intCat {
     name: string
 }
 
-export interface intAppearance {
-    lightMode: boolean;
+export interface intCatState {
+    lightMode : boolean,
+    catArray: intCat[],
+    catName: string,
+    singleBreedArray: intCat[],
+    catNameInput: string,
+    familyFriendliness: number
+}
+
+export interface IntUserCat {
+    inputbreed: string,
+    description: string,
+    username: string
 }

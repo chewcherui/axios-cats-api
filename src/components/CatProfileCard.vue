@@ -20,7 +20,7 @@ defineProps<{
 
                 <!-- Learn more : redirect to individual breed profile page -->
 
-                <router-link :to="{ name: 'CatProfile', params: { catname: catItem.name }}" class="hover:text-sky-300">
+                <router-link :to="{ name: 'CatDetailedProfile', params: { catname: catItem.name }}" class="hover:text-sky-300">
                     <p class="text-sm mt-10 mb-2">Learn more about this breed</p>
                 </router-link>
             </li>
